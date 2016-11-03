@@ -7,7 +7,7 @@ This package contains some reusable, flexible and scalable api widgets for Asp.N
 
 ## why?
 
-In China, the GSM and TD-SCDMA will hijacking the HTTP status code 400, 404 to 139.com navigation page in some case. In this cases, we need to convert
+> In China, the GSM and TD-SCDMA will hijacking the HTTP status code 400, 404 to 139.com navigation page in some case. In this cases, we need to convert
 RESTful API to
 
 ```C# 
