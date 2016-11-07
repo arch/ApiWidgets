@@ -1,5 +1,7 @@
 ﻿// Copyright (c) love.net team. All rights reserved.
 
+using Love.Net.Core;
+
 namespace Microsoft.AspNetCore.ApiWidgets {
     public class ApiResult : IApiResult {
         /// <summary>
@@ -41,6 +43,20 @@ namespace Microsoft.AspNetCore.ApiWidgets {
         public static IApiResult Failed(string message, int? statusCode = null) => new ApiResult {
             StatusCode = statusCode ?? 400,
             Message = message
+        };
+
+        /// <summary>
+        ///  Creates a new instance of <see cref="IApiResult{TResult}"/> by the specified error message.
+        /// </summary>
+        /// <typeparam name="TResult">The type of the result.</typeparam>
+        /// <param name="errorResult">The error result.</param>
+        /// <param name="message">The message.</param>
+        /// <param name="statusCode">The status code.</param>
+        /// <returns>An instance inherited from <see cref="IApiResult"/> interface.</returns>
+        public static IApiResult<TResult> Failed<TResult>(TResult errorResult, string message, int? statusCode = null) => new ApiResult<TResult> {
+            StatusCode = statusCode ?? 400,
+            Message = message,
+            Result = errorResult
         };
 
         /// <summary>
