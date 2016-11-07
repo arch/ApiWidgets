@@ -1,7 +1,5 @@
 ﻿// Copyright (c) love.net team. All rights reserved.
 
-using Love.Net.Core;
-
 namespace Microsoft.AspNetCore.ApiWidgets {
     public class ApiResult : IApiResult {
         /// <summary>
