@@ -36,9 +36,10 @@ namespace Microsoft.AspNetCore.ApiWidgets {
         ///  Creates a new instance of <see cref="IApiResult"/> by the specified error message.
         /// </summary>
         /// <param name="message">The message.</param>
+        /// <param name="statusCode">The status code</param>
         /// <returns>An instance inherited from <see cref="IApiResult"/> interface.</returns>
-        public static IApiResult Failed(string message) => new ApiResult {
-            StatusCode = 400,
+        public static IApiResult Failed(string message, int? statusCode = null) => new ApiResult {
+            StatusCode = statusCode ?? 400,
             Message = message
         };
 
