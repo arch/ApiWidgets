@@ -16,6 +16,7 @@
       "aspnetcore",
       "aspnet",
       "webapi",
+      "apiwidget",
       "widget"
     ]
   },
