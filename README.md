@@ -9,20 +9,21 @@ This package contains some reusable, flexible and scalable api widgets for Asp.N
 RESTful API to `200 OK` + `ApiResult`
 
 ```C# 
-public class ApiResult<T> {
+public class ApiResult<TResult> {
 	public ApiResult() {
 
 	}
 
-	public int Code { get; set; }
+	public int StatusCode { get; set; }
 
 	public string Message { get; set; }
 
-	public ApiResult(T data) {
+	public ApiResult(TResult result, int? statusCode) {
+		StatusCode = statusCode ?? 200
 		Data = data;
 	}
 
-	public T Data { get; set; }
+	public TResult Result { get; set; }
 }
 ```
 
