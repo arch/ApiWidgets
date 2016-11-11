@@ -20,7 +20,7 @@ public class ApiResult<TResult> {
 
 	public ApiResult(TResult result, int? statusCode) {
 		StatusCode = statusCode ?? 200
-		Data = data;
+		Result = result;
 	}
 
 	public TResult Result { get; set; }
@@ -28,3 +28,7 @@ public class ApiResult<TResult> {
 ```
 
 - [ ] More...
+
+# How to use
+
+See [Host](src/Host) for more information.
