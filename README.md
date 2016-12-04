@@ -1,4 +1,6 @@
 # Microsoft.AspNetCore.ApiWidgets
+
+[![Join the chat at https://gitter.im/lovedotnet/ApiWidgets](https://badges.gitter.im/lovedotnet/ApiWidgets.svg)](https://gitter.im/lovedotnet/ApiWidgets?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 This package contains some reusable, flexible and scalable api widgets for Asp.Net Core.
 
 # Features
