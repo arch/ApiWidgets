@@ -1,6 +1,6 @@
-﻿// Copyright (c) love.net team. All rights reserved.
+﻿// Copyright (c) Arch team. All rights reserved.
 
-using Love.Net.Core;
+using Arch.Core;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
